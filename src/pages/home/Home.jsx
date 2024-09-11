@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import List from "../../components/table/Table";
 import Widget from "../../components/widget/Widget";
-import "./Home.scss"
+// import "./Home.scss"
 
 function Home() {
   return (
