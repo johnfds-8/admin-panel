@@ -1,22 +1,18 @@
-
-import "./Home.scss"
-
+import "./Home.scss";
 import Chart from "../../components/chart/Chart";
 import Featured from "../../components/featured/Featured";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Widget from "../../components/widget/Widget";
-import List from "../list/List";
 
 function Home() {
   return (
     <div className="home">
-      <Sidebar/>
+      <Sidebar />
       <div className="homeContainer">
-        <Navbar/>
-          
+        <Navbar />
+
         <div className="widgets">
-        
           <Widget type="user" />
           <Widget type="order" />
           <Widget type="earning" />
@@ -24,13 +20,12 @@ function Home() {
         </div>
 
         <div className="charts">
-          <Featured/>
-          <Chart />
+          <Featured />
+          <Chart title="last 6 Months(Revenue)" aspect={2 / 1} />
         </div>
 
         <div className="listContainer">
           <div className="listTitle">Latest Transaction</div>
-          <List />
         </div>
       </div>
     </div>
