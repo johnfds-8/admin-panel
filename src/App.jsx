@@ -1,4 +1,3 @@
-// import Home from "./pages/home/Home";
 import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
@@ -8,6 +7,7 @@ import "./style/dark.scss";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import Login from "./pages/login/Login";
+import Home from "./pages/home/Home";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/">
-            {/* <Route index element={<Home />} /> */}
+            <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
 
             <Route path="users">
